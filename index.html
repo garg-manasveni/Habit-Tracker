@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Healthy You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Healthy Habits Tracker</h1>
+        <p>Build daily habits and become a better you!</p>
+    </header>
+
+    <main>
+        <section class="habit-form">
+            <h2>Add a New Habit</h2>
+            <input type="text" id="habit-input" placeholder="Enter a habit e.g., Drink Water">
+            <button id="add-habit-btn">Add Habit</button>
+        </section>
+
+        <section class="habit-list-section">
+            <h2>Your Habits</h2>
+            <ul id="habit-list"></ul>
+        </section>
+
+        <section class="progress-section">
+            <h2>Daily Progress</h2>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-text">0% completed</p>
+        </section>
+
+        <section class="encouragement-section">
+            <h2>Daily Motivation</h2>
+            <p id="encouragement-message">Start small, grow big! 🌟</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by a first-year CS student</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

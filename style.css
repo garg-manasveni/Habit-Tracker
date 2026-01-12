@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Habit Form */
+.habit-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.habit-form input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #6a11cb;
+    border-radius: 5px;
+}
+
+.habit-form button {
+    padding: 10px 20px;
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.habit-form button:hover {
+    background-color: #8e2de2;
+}
+
+/* Habit List */
+.habit-list-section {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffffcc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#habit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.habit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.habit-item.completed strong {
+    text-decoration: line-through;
+    color: green;
+}
+
+/* Buttons inside habit item */
+.habit-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #4caf50;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.complete-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Streak */
+.streak {
+    background-color: #ffeb3b;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Completion dots */
+.completion-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.dot.completed {
+    background-color: #4caf50;
+}
+
+/* Progress Bar */
+.progress-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.5s;
+    border-radius: 20px;
+}
+
+/* Encouragement */
+.encouragement-section {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6a11cb;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
